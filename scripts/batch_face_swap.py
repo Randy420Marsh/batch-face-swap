@@ -827,7 +827,7 @@ class Script(scripts.Script):
                                     howSplit = gr.Radio(["Horizontal only ▤", "Vertical only ▥", "Both ▦"], value = "Both ▦", label = "How to divide")
                                     maskHeight = gr.Slider(minimum=0, maximum=300, step=1, value=100, label="Mask height")
                                 with gr.Accordion(label="Visualizer", open=False):
-                                    exampleImage = gr.Image(value=Image.open("./extensions/batch-face-swap/images/exampleB.jpg"), label="Split visualizer", show_label=False, type="pil", visible=True).style(height=500)
+                                    exampleImage = gr.Image(value=Image.open("./extensions/batch-face-swap/images/exampleB.jpg"), label="Split visualizer", show_label=False, type="pil", visible=True, elem_id="split-visualizer", height=500)
                                     with gr.Row(variant='compact'):
                                         with gr.Column(variant='panel'):
                                             gr.HTML("", visible=False)
